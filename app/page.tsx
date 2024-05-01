@@ -72,6 +72,7 @@ const Home = () => {
                 <div
                   className="card p-3 shadow"
                   onClick={() => router.push('/categorias/pc')}
+                  style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
                     <Image
@@ -99,6 +100,7 @@ const Home = () => {
                   onClick={() =>
                     router.push('/categorias/monitores-accesorios')
                   }
+                  style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
                     <Image
@@ -118,10 +120,14 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-lg-3 mb-4">
+              <div
+                className="col-12 col-sm-6 col-lg-3 mb-4"
+                style={{ height: '650px' }}
+              >
                 <div
                   className="card p-3 shadow"
                   onClick={() => router.push('/categorias/vr-simulacion')}
+                  style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
                     <Image
@@ -145,6 +151,7 @@ const Home = () => {
                 <div
                   className="card p-3 shadow"
                   onClick={() => router.push('/categorias/audio')}
+                  style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
                     <Image

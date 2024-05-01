@@ -8,18 +8,20 @@ import pcStreaming from '/public/imagenes/pc/pcStreaming.png';
 export const productosPc = [
   {
     id: 1,
+    slug: 'skytech-pc-gamer',
     nombre: 'Skytech PC Gamer',
     detalles: 'Potencia gráfica ininterrumpida',
     detallesTecnicos:
-      'Skytech Shiva Gaming PC Desktop – Intel Core i7 12700F 2.1 GHz, NVIDIA RTX 4060, 1TB NVME SSD, 16GB DDR4 RAM 3200, 650W Gold PSU, 240mm AIO, 11AC Wi-Fi, Windows 11 Home 64-bit',
+      'Skytech Shiva Gaming PC Desktop–Intel Core i7 12700F 2.1 GHz, NVIDIA RTX 4060, 1TB NVME SSD, 16GB DDR4 RAM 3200, 650W Gold PSU, 240mm AIO, 11AC Wi-Fi, Windows 11 Home 64-bit',
 
     descripcion:
-      'PC Gamer con procesador Intel Core i7, 16GB de RAM, 1TB de almacenamiento y tarjeta gráfica NVIDIA GeForce RTX 3060',
+      "Procesador de CPU Intel Core i7 12700F 2.1GHz (4.9GHz Max Boost) | SSD NVME de 1TB – hasta 30 veces más rápido que el disco duro tradicional Tarjeta gráfica NVIDIA Geforce RTX 4060 de 8 GB GDDR6 (la marca puede variar) | 16 GB DDR4 RAM 3200 memoria para juegos con disipador de calor | Windows 11 Home 64 bits 802.11 AC | Sin Bloatware | Las opciones de salida gráfica incluyen 1 HDMI y 1 puerto de visualización garantizado, los puertos adicionales pueden variar | Puertos USB incluyendo puertos 2.0, 3.0 y 3.2 Gen1 | Audio HD y micrófono | Teclado y mouse para juegos gratuitos 3 ventiladores de anillo RGB para un máximo flujo de aire | Skytech SHIVA Gaming Case con vidrio templado, color blanco. Montado en los Estados Unidos Este potente PC para juegos es capaz de ejecutar todos tus juegos favoritos como Call of Duty Warzone, Fornite, Escape from Tarkov, Grand Theft Auto V, Valorant, World of Warcraft, League of Legends, Apex Legends, Roblox, PlayerunKNOWN's Battlegrounds, Overwatch, Counter-Strike: Global Offensive, Battlefield V, New World, Minecraft, Elden Ring, Rocket Leotardo ague, The Division 2, y más en ajustes Ultra, resolución detallada de 1440p Quad HD y juego fluido de más de 60 FPS",
     precio: 22058,
     imagen: pcGamer,
   },
   {
     id: 2,
+    slug: 'pc-hp-oficina',
     nombre: 'PC HP Oficina',
     detalles: 'Rendimiento fiable reacondicionado',
     detallesTecnicos:
@@ -31,6 +33,7 @@ export const productosPc = [
   },
   {
     id: 3,
+    slug: 'mac-studio',
     nombre: 'Mac Studio',
     detalles: 'Potencia creativa sin límites',
     detallesTecnicos:
@@ -42,6 +45,7 @@ export const productosPc = [
   },
   {
     id: 4,
+    slug: 'lenovo-ideacentre',
     nombre: 'Lenovo IdeaCentre',
     detalles: 'Todo en uno eficiente',
     detallesTecnicos:
@@ -53,6 +57,7 @@ export const productosPc = [
   },
   {
     id: 5,
+    slug: 'pc-mini',
     nombre: 'PC Mini',
     detalles: 'Compacto y potente',
     detallesTecnicos:
@@ -64,6 +69,7 @@ export const productosPc = [
   },
   {
     id: 6,
+    slug: 'pc-streaming',
     nombre: 'PC Streaming',
     detalles: 'Optimizado para streaming',
     detallesTecnicos:

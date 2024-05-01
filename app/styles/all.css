@@ -124,3 +124,15 @@ h2 {
 .chevron-producto {
   opacity: 0;
 }
+
+.producto-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3b43;
+}
+
+.producto-precio {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d545e;
+}

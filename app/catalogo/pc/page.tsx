@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
-import { productosPc } from './pc';
+import { productosPc } from './productosPc';
 import chevronIcono from '/public/imagenes/iconos/chevron.png';
 
 const CatalogoPc = () => {

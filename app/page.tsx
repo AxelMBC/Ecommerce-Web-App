@@ -19,44 +19,7 @@ import categoriaAudio from '/public/imagenes/categorias/categoria_audio.jpg';
 
 const Home = () => {
   const router = useRouter();
-  const categories = [
-    {
-      imageUrl: laptopGamerImg,
-      title: 'Laptops',
-      description:
-        'Descubre nuestra selección de laptops de alto rendimiento para gaming, trabajo y entretenimiento. Elige entre las mejores marcas y los últimos modelos.',
-      link: '/categorias/computadoras-portatiles',
-      width: 300,
-      height: 200,
-    },
-    {
-      imageUrl: computadoraGamerImg,
-      title: 'Computadoras de Escritorio',
-      description:
-        'Explora nuestra amplia gama de smartphones, desde dispositivos de entrada hasta los más avanzados. Encuentra el teléfono perfecto para ti.',
-      link: 'categorias/computadoras-escritorio',
-      width: 300,
-      height: 200,
-    },
-    {
-      imageUrl: monitorGamerimg,
-      title: 'Monitores',
-      description:
-        'Mejora tu experiencia de usuario con nuestra selección de teclados, ratones, auriculares y más. Todo lo que necesitas para tu configuración perfecta.',
-      link: '/categorias/perifericos',
-      width: 300,
-      height: 200,
-    },
-    {
-      imageUrl: tecladoimg,
-      title: 'teclados',
-      description:
-        'Mejora tu experiencia de usuario con nuestra selección de teclados, ratones, auriculares y más. Todo lo que necesitas para tu configuración perfecta.',
-      link: '/categorias/perifericos',
-      width: 300,
-      height: 200,
-    },
-  ];
+
   return (
     <div className="flex min-h-screen flex-col p-6">
       <Header />
@@ -71,7 +34,7 @@ const Home = () => {
               <div className="col-12 col-sm-6 col-lg-3 mb-4">
                 <div
                   className="card p-3 shadow"
-                  onClick={() => router.push('/categorias/pc')}
+                  onClick={() => router.push('/catalogo/pc')}
                   style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
@@ -97,9 +60,7 @@ const Home = () => {
               <div className="col-12 col-sm-6 col-lg-3 mb-4">
                 <div
                   className="card p-3 shadow"
-                  onClick={() =>
-                    router.push('/categorias/monitores-accesorios')
-                  }
+                  onClick={() => router.push('/catalogo/monitores-accesorios')}
                   style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
@@ -126,7 +87,7 @@ const Home = () => {
               >
                 <div
                   className="card p-3 shadow"
-                  onClick={() => router.push('/categorias/vr-simulacion')}
+                  onClick={() => router.push('/catalogo/vr-simulacion')}
                   style={{ height: '650px' }}
                 >
                   <div className="row pb-4">
@@ -150,7 +111,7 @@ const Home = () => {
               <div className="col-12 col-sm-6 col-lg-3 mb-4">
                 <div
                   className="card p-3 shadow"
-                  onClick={() => router.push('/categorias/audio')}
+                  onClick={() => router.push('/catalogo/audio')}
                   style={{ height: '650px' }}
                 >
                   <div className="row pb-4">

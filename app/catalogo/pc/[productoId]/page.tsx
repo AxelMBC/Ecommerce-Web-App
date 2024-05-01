@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Header from '../../../header';
 import Footer from '../../../footer';
 import { convertirPrecio } from '../../../utils/convertirPrecio';
-import { productosPc } from '../pc';
+import { productosPc } from '../productosPc';
 import pcGamer from '/public/imagenes/pc/pcGamer.png';
 
 const CatalogoPc = () => {

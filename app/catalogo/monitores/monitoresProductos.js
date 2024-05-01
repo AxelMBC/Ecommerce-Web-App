@@ -5,7 +5,7 @@ import pcMini from '/public/imagenes/pc/pcMini.png';
 import pcVideo from '/public/imagenes/pc/pcVideo.png';
 import pcStreaming from '/public/imagenes/pc/pcStreaming.png';
 
-export const productosPc = [
+export const monitoresProductos = [
   {
     id: 1,
     slug: 'skytech-pc-gamer',

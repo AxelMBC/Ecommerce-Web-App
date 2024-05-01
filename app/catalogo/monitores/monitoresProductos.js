@@ -8,14 +8,14 @@ import pcStreaming from '/public/imagenes/pc/pcStreaming.png';
 export const monitoresProductos = [
   {
     id: 1,
-    slug: 'skytech-pc-gamer',
-    nombre: 'Skytech PC Gamer',
+    slug: 'samsung-monitor-curvo-27',
+    nombre: 'Samsung Monitor Curvo 27',
     detalles: 'Potencia gráfica ininterrumpida',
     detallesTecnicos:
-      'Skytech Shiva Gaming PC Desktop–Intel Core i7 12700F 2.1 GHz, NVIDIA RTX 4060, 1TB NVME SSD, 16GB DDR4 RAM 3200, 650W Gold PSU, 240mm AIO, 11AC Wi-Fi, Windows 11 Home 64-bit',
+      'SAMSUNG Monitor Curvo 27" pulgadas, sin biseles, FHD 1920x1080, Game Mode, FreeSync, Eco Saving Plus, Flicker Free, 1x HDMI 1.4, 1x D-sub, 4ms(GTG), Dark Blue Gray (LC27R500FHLXZX)',
 
     descripcion:
-      "Procesador de CPU Intel Core i7 12700F 2.1GHz (4.9GHz Max Boost) | SSD NVME de 1TB – hasta 30 veces más rápido que el disco duro tradicional Tarjeta gráfica NVIDIA Geforce RTX 4060 de 8 GB GDDR6 (la marca puede variar) | 16 GB DDR4 RAM 3200 memoria para juegos con disipador de calor | Windows 11 Home 64 bits 802.11 AC | Sin Bloatware | Las opciones de salida gráfica incluyen 1 HDMI y 1 puerto de visualización garantizado, los puertos adicionales pueden variar | Puertos USB incluyendo puertos 2.0, 3.0 y 3.2 Gen1 | Audio HD y micrófono | Teclado y mouse para juegos gratuitos 3 ventiladores de anillo RGB para un máximo flujo de aire | Skytech SHIVA Gaming Case con vidrio templado, color blanco. Montado en los Estados Unidos Este potente PC para juegos es capaz de ejecutar todos tus juegos favoritos como Call of Duty Warzone, Fornite, Escape from Tarkov, Grand Theft Auto V, Valorant, World of Warcraft, League of Legends, Apex Legends, Roblox, PlayerunKNOWN's Battlegrounds, Overwatch, Counter-Strike: Global Offensive, Battlefield V, New World, Minecraft, Elden Ring, Rocket Leotardo ague, The Division 2, y más en ajustes Ultra, resolución detallada de 1440p Quad HD y juego fluido de más de 60 FPS",
+      'Experiencia de visualización cómoda e inmersiva: gracias a su curvatura de 1800R brinda uniformidad en relación a la distancia entre el OJO-OBJTO. Lo que proporciona una experiencia de visualización más cómoda y también más inmersiva a comparación de los monitores planos. Bezel-less Design: Pantalla sin bisel de 3 lados, se extiende de borde a borde para una visualización máxima. Con su refinado exterior y base de soporte en forma de Y, la pantalla brinda un aspecto más elegante y moderno. Flicker Free & Eye Saver Mode: Un descanso para tus ojos, la tecnología Flicker Free reduce el parpadeo de la pantalla para que tus ojos descansen, permitiéndote así trabajar o jugar durante más tiempo. De esta forma, reducirás la fatiga visual y disfrutarás de una mejor experiencia inmersiva. Game mode: Experiencia de juego con optimización en el contraste, los colores y las sombras. Lo que te permitirá un fácil reconocimiento de tus enemigos en los lugares más oscuros. Free-sync (AMD): Brinda una respuesta de juego sin Tearing y la velocidad de escaneo del contenido del juego y el monitor se sincroniza en tiempo real. Tipo de base: Sencilla; Montura de pared: 75 x 75; Inclinación: -2.0° (±2.0°) ~ 22.0° (±2.0°)',
     precio: 22058,
     imagen: pcGamer,
   },

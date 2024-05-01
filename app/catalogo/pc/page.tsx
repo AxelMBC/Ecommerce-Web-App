@@ -34,62 +34,68 @@ const CatalogoPc = () => {
         >
           <div className="col-xl-12 col-xxl-11">
             <div className="row ">
-              {productosPc.map((producto) => (
-                <div className="col-sm-12 col-md-6 col-xxl-4" key={producto.id}>
+              {productosPc.map((producto) => {
+                console.log('Producto Individual: ', producto);
+                return (
                   <div
-                    style={{
-                      boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-                      borderRadius: '30px',
-                      margin: '20px',
-                      padding: '40px',
-                      height: '390px',
-                      backgroundColor: 'white',
-                      opacity: 0.8,
-                    }}
-                    className="carta-personalizada"
+                    className="col-sm-12 col-md-6 col-xxl-4"
+                    key={producto.id}
                   >
-                    <div className=" d-flex justify-content-center">
-                      {producto.imagen ? (
+                    <div
+                      style={{
+                        boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                        borderRadius: '30px',
+                        margin: '20px',
+                        padding: '40px',
+                        height: '390px',
+                        backgroundColor: 'white',
+                        opacity: 0.8,
+                      }}
+                      className="carta-personalizada"
+                    >
+                      <div className=" d-flex justify-content-center">
+                        {producto.imagen ? (
+                          <Image
+                            alt={`${producto.nombre} Imagen`}
+                            src={producto.imagen}
+                            width={200}
+                            height={200}
+                          />
+                        ) : null}
+                      </div>
+                      <div style={{ paddingTop: '25px' }}>
+                        <h3 style={{ fontWeight: 700 }} className="m-0">
+                          {producto.nombre}
+                        </h3>
+                        <p
+                          style={{
+                            fontWeight: 500,
+                            color: 'gray',
+                            marginBottom: '10px',
+                          }}
+                        >
+                          {producto.detalles}
+                        </p>
+                      </div>
+                      <div className="d-flex justify-content-end align-items-center">
+                        <p
+                          style={{ fontSize: '20px', margin: 0 }}
+                          className="pe-2"
+                        >
+                          {convertirPrecio(producto.precio)} MXN
+                        </p>
                         <Image
-                          alt={`${producto.nombre} Imagen`}
-                          src={producto.imagen}
-                          width={200}
-                          height={200}
+                          width={20}
+                          height={20}
+                          src={chevronIcono}
+                          alt="Chevron Icono"
+                          className="chevron-producto"
                         />
-                      ) : null}
-                    </div>
-                    <div style={{ paddingTop: '25px' }}>
-                      <h3 style={{ fontWeight: 700 }} className="m-0">
-                        {producto.nombre}
-                      </h3>
-                      <p
-                        style={{
-                          fontWeight: 500,
-                          color: 'gray',
-                          marginBottom: '10px',
-                        }}
-                      >
-                        {producto.detalles}
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-end align-items-center">
-                      <p
-                        style={{ fontSize: '20px', margin: 0 }}
-                        className="pe-2"
-                      >
-                        {convertirPrecio(producto.precio)} MXN
-                      </p>
-                      <Image
-                        width={20}
-                        height={20}
-                        src={chevronIcono}
-                        alt="Chevron Icono"
-                        className="chevron-producto"
-                      />
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

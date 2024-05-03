@@ -1,9 +1,21 @@
-import pcGamer from '/public/imagenes/pc/pcGamer.png';
-import pcOficina from '/public/imagenes/pc/pcOficina.png';
-import pcTodo from '/public/imagenes/pc/pcTodo.png';
-import pcMini from '/public/imagenes/pc/pcMini.png';
-import pcVideo from '/public/imagenes/pc/pcVideo.png';
-import pcStreaming from '/public/imagenes/pc/pcStreaming.png';
+import monSamsung from '/public/imagenes/monitores/monitorSamsung.jpg';
+import monSamsungDos from '/public/imagenes/monitores/monitorSamsungDos.jpg';
+import monSamsungTres from '/public/imagenes/monitores/monitorSamsungTres.jpg';
+import Odyssey from '/public/imagenes/monitores/Odyssey.jpg';
+import OdysseyDos from '/public/imagenes/monitores/OdysseyDos.jpg';
+import OdysseyTres from '/public/imagenes/monitores/OdysseyTres.jpg';
+import AppleStudio from '/public/imagenes/monitores/AppleStudio.jpg';
+import AppleStudioDos from '/public/imagenes/monitores/AppleStudioDos.jpg';
+import AppleStudioTres from '/public/imagenes/monitores/AppleStudioTres.jpg';
+import quianMonitor from '/public/imagenes/monitores/QuianMonitor.jpg';
+import quianMonitorDos from '/public/imagenes/monitores/QuianMonitorDos.jpg';
+import quianMonitorTres from '/public/imagenes/monitores/quianMonitorTres.jpg';
+import Acteck from '/public/imagenes/monitores/Acteck.jpg';
+import ActeckDos from '/public/imagenes/monitores/ActeckDos.jpg';
+import ActeckTres from '/public/imagenes/monitores/ActeckTres.jpg';
+import LgMonitor from '/public/imagenes/monitores/LgMonitor.jpg';
+import LgMonitorDos from '/public/imagenes/monitores/LgMonitorDos.jpg';
+import LgMonitorTres from '/public/imagenes/monitores/LgMonitorTres.jpg';
 
 export const monitoresProductos = [
   {
@@ -16,67 +28,79 @@ export const monitoresProductos = [
 
     descripcion:
       'Experiencia de visualización cómoda e inmersiva: gracias a su curvatura de 1800R brinda uniformidad en relación a la distancia entre el OJO-OBJTO. Lo que proporciona una experiencia de visualización más cómoda y también más inmersiva a comparación de los monitores planos. Bezel-less Design: Pantalla sin bisel de 3 lados, se extiende de borde a borde para una visualización máxima. Con su refinado exterior y base de soporte en forma de Y, la pantalla brinda un aspecto más elegante y moderno. Flicker Free & Eye Saver Mode: Un descanso para tus ojos, la tecnología Flicker Free reduce el parpadeo de la pantalla para que tus ojos descansen, permitiéndote así trabajar o jugar durante más tiempo. De esta forma, reducirás la fatiga visual y disfrutarás de una mejor experiencia inmersiva. Game mode: Experiencia de juego con optimización en el contraste, los colores y las sombras. Lo que te permitirá un fácil reconocimiento de tus enemigos en los lugares más oscuros. Free-sync (AMD): Brinda una respuesta de juego sin Tearing y la velocidad de escaneo del contenido del juego y el monitor se sincroniza en tiempo real. Tipo de base: Sencilla; Montura de pared: 75 x 75; Inclinación: -2.0° (±2.0°) ~ 22.0° (±2.0°)',
-    precio: 22058,
-    imagen: pcGamer,
+    precio: 3003,
+    imagen: monSamsung,
+    imagen: monSamsungDos,
+    imagen: monSamsungTres,
   },
   {
     id: 2,
-    slug: 'pc-hp-oficina',
-    nombre: 'PC HP Oficina',
-    detalles: 'Rendimiento fiable reacondicionado',
+    slug: 'samsung-curvo-odyssey',
+    nombre: 'Samsung Curvo Odyssey',
+    detalles: 'Amplitud Incomparable',
     detallesTecnicos:
-      'Blair Technology Group HP 6200 Elite - computadora de sobremesa, Intel Core i5 de 3,1 GHz, RAM de 8 GB, Disco Duro de 1 TB, DVDRW, Monitor LCD de 19 Pulgadas, WiFi, Windows 10 (Reacondicionado)',
+      'SAMSUNG Monitor Gaming 49" Curvo Odyssey G9 OLED .03 ms 240 Hz (LS49CG930SLXZX)',
     descripcion:
-      'PC para oficina con procesador Intel Core i5, 8GB de RAM, 500GB de almacenamiento y tarjeta gráfica integrada',
-    precio: 3200,
-    imagen: pcOficina,
+      'Marca SAMSUNG Fabricante Samsung Color	Gris Alto del producto 52,93 centimeters Ancho del producto 23,69 centimeters Tamaño del área de visualización de la pantalla con pie	49 Pulgadas Resolución	5,120 x 1,440',
+    precio: 26183,
+    imagen: Odyssey,
+    imagen: OdysseyDos,
+    imagen: OdysseyTres,
   },
   {
     id: 3,
-    slug: 'mac-studio',
-    nombre: 'Mac Studio',
-    detalles: 'Potencia creativa sin límites',
+    slug: 'apple-studio-display',
+    nombre: 'Apple Studio Display',
+    detalles: 'El mejor diseño en tus manos',
     detallesTecnicos:
-      'Mac Studio CPU de 12 núcleos GPU de 30 núcleos Neural Engine de 16 núcleos',
+      'Marca	Apple Tamaño de la pantalla	27 Pulgadas Resolución	5K UHD 2880p Descripción de la superficie de la pantalla	Brillante Tiempo de respuesta	1 Milliseconds',
     descripcion:
-      'PC diseñado para edición de video con procesador AMD Ryzen 7, 32GB de RAM, 2TB de almacenamiento SSD y tarjeta gráfica NVIDIA GeForce RTX 3070',
-    precio: 45999,
-    imagen: pcVideo,
+      'Distribuidor autorizado Apple. Devoluciones: solo productos dañados, inoperantes al primer uso o sin abrir en caja original sellada Envolvente pantalla Retina 5K de 27 pulgadas con 600 nits de brillo, compatibilidad con 1,000 millones de colores y amplia gama de colores P3 Sistema de tres micrófonos con calidad de estudio para llamadas y grabaciones de voz supernítidas Sistema de sonido de seis bocinas con audio espacial para disfrutar una experiencia de audio increíble Un puerto Thunderbolt 3 y tres puertos USB-C Cámara ultra gran angular de 12 MP con Encuadre Centrado para videollamadas más naturales 96 W de potencia para cargar una notebook Mac Vidrio nanotexturizado (opcional)',
+    precio: 44999,
+    imagen: AppleStudio,
+    imagen: AppleStudioDos,
+    imagen: AppleStudioTres,
   },
   {
     id: 4,
-    slug: 'lenovo-ideacentre',
-    nombre: 'Lenovo IdeaCentre',
-    detalles: 'Todo en uno eficiente',
+    slug: 'quian-monitor',
+    nombre: 'Qian Monitor',
+    detalles: 'Colores que impactan',
     detallesTecnicos:
-      'Lenovo All in One IdeaCentre AIO 3 24IAP7 Intel Celeron 7305 RAM 8GB SSD 256GB Disco Duro de 1TB Windows 11 Home',
+      'Qian Monitor LED sin Marco de 21,5" Pulgadas, Full HD 1920x1080p, 16,7 Millones de Colores, Monitor PC 75 Hz, 220 CD/m2 | HDMI/VGA | VESA 75 x 75 mm | Inclinación Ajustable',
     descripcion:
-      'PC todo en uno con procesador Intel Core i5, 8GB de RAM, 1TB de almacenamiento y tarjeta gráfica integrada',
-    precio: 8589,
-    imagen: pcTodo,
+      'Disfruta de una claridad impresionante: aprovecha cada centímetro cuadrado con el nuevo monitor Qian 1080p. Pantalla a color de 16,7 millones con frecuencia de actualización de 75 Hz y relación de contraste de 3000:1 para brindarle una mejor imagen sin importar desde dónde la mire. Inmersión absoluta: monitor LED de 21,5" con resolución Full HD de 1080p que presenta un diseño compacto y sin marco para sumergirte en acciones visuales impresionantes, así como en atractivos ojos vívidos. Calidad de imagen vibrante: ofrece una mayor calidad de visualización, colores vibrantes y precisos en todos los ángulos con una gama srgb del 96 % y 16,7 millones de colores. Trae tus programas de televisión favoritos. Películas y juegos a la vida. Conectividad flexible: conecte fácilmente su monitor a su dispositivo, está equipado con 1x VGA, 1x HDMI y una salida de audio de 3,5 mm. La base del monitor de juegos FHD se fija con inclinación de -5°~ 15°. Soporte inigualable: Protegido por la garantía de cero píxeles muertos a la llegada de Qian, 1 año de garantía de piezas y mano de obra y soporte técnico gratuito de por vida.',
+    precio: 1346,
+    imagen: quianMonitor,
+    imagen: quianMonitorDos,
+    imagen: quianMonitorTres,
   },
   {
     id: 5,
-    slug: 'pc-mini',
-    nombre: 'PC Mini',
-    detalles: 'Compacto y potente',
+    slug: 'acteck-monitor',
+    nombre: 'Acteck Monitor',
+    detalles: 'Gran sonido de calidad',
     detallesTecnicos:
-      'Beelink Mini PC, Mini S Intel 11th Gen 4-Cores N5095, Mini computadora de Escritorio 8GB DDR4 RAM 128GB SSD, Mini computadora Dual HDMI 4K UHD/Gigabit Ethernet/Dual WiFi/BT4.0/HTPC/Family- NAS',
+      'Acteck Monitor 23.8" Plano 75 HZ HDMI + VGA + DC Altavoces 3 W Negro Captive SP240',
     descripcion:
-      'PC mini con procesador Intel Core i3, 4GB de RAM, 256GB de almacenamiento y tarjeta gráfica integrada',
-    precio: 2999,
-    imagen: pcMini,
+      'Tamaño de la pantalla: 23.8 pulgadas Fácil de usar Muy conveniente Producto de calidad',
+    precio: 1568,
+    imagen: Acteck,
+    imagen: ActeckDos,
+    imagen: ActeckTres,
   },
   {
     id: 6,
-    slug: 'pc-streaming',
-    nombre: 'PC Streaming',
-    detalles: 'Optimizado para streaming',
+    slug: 'lg-monitor',
+    nombre: 'LG Monitor',
+    detalles: 'Colores increíbles',
     detallesTecnicos:
-      'XTREME PC GAMING MSI AMD Radeon Vega Renoir Ryzen 7 5700G 16GB SSD 500GB 3TB WiFi',
+      'LG 24GQ50F-B Ultragear Gaming Monitor 24" VA FHD 165Hz 1ms MBR AMD FreeSync HDMI 1.4 X 2, DP 1.2 X 1',
     descripcion:
-      'PC optimizado para streaming con procesador Intel Core i9, 32GB de RAM, 1TB SSD y tarjeta gráfica NVIDIA GeForce RTX 3080, incluye tarjeta de captura 4K',
-    precio: 7999,
-    imagen: pcStreaming,
+      'Pantalla 24” Full HD (1920 x 1080). 165Hz Refresh Rate, movimiento fluido para video juegos. 1ms MBR, increible velocidad para la victoria. AMD FreeSync Premium, mas claro suave y rapido movimiento. Gaming UI, configuración de accesos directos de ajustes de pantalla. 3 caras prácticamente sin bordes. Estabilizador de colores negros y punta de mira. FPS Counter puede ver sus fotogramas por segundo en los juegos mostrándolos en la esquina de la pantalla.',
+    precio: 4399,
+    imagen: LgMonitor,
+    imagen: LgMonitorDos,
+    imagen: LgMonitorTres,
   },
 ];

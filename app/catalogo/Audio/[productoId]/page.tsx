@@ -3,12 +3,14 @@
 import { usePathname } from 'next/navigation';
 import Header from '../../../header';
 import Footer from '../../../footer';
+import { productosAudio } from '../productosAudio';
 import ProductoIndividual from '../../ProductoIndividual';
-import { productosPc } from '../productosPc';
 
-const CatalogoPc = () => {
+const CatalogoAudio = () => {
   const productoId = usePathname().split('/').pop();
-  const producto = productosPc.find((producto) => producto.slug === productoId);
+  const producto = productosAudio.find(
+    (producto) => producto.slug === productoId,
+  );
 
   return (
     <div style={{ backgroundColor: '#120925' }}>
@@ -16,12 +18,11 @@ const CatalogoPc = () => {
       {producto ? (
         <ProductoIndividual producto={producto} />
       ) : (
-        <div>Producto not found</div> // Handling undefined here
+        <div>Producto No Encontrado </div>
       )}
-
       <Footer />
     </div>
   );
 };
 
-export default CatalogoPc;
+export default CatalogoAudio;

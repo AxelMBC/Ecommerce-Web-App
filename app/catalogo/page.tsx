@@ -73,7 +73,7 @@ const Catalogo = () => {
             />
           </div>
           <div className="col-10 col-lg-7">
-            <h3>Monitores y Accesorios</h3>
+            <h3>Monitores</h3>
             <div className="d-flex">
               <p className="pe-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -84,13 +84,15 @@ const Catalogo = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <Image
-                width={50}
-                height={50}
-                src={chevronIconoBlanco}
-                alt="Chevron Icono"
-                className="chevron-icono"
-              />
+              <Link href="/catalogo/monitores">
+                <Image
+                  width={50}
+                  height={50}
+                  src={chevronIconoBlanco}
+                  alt="Chevron Icono"
+                  className="chevron-icono"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -109,7 +111,7 @@ const Catalogo = () => {
             />
           </div>
           <div className="col-10 col-lg-7">
-            <h3>Realidad Virtual y Simulación Realidad Virtual y Simulación</h3>
+            <h3>Realidad Virtual</h3>
             <div className="d-flex">
               <p className="pe-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -120,13 +122,15 @@ const Catalogo = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <Image
-                width={50}
-                height={50}
-                src={chevronIcono}
-                alt="Chevron Icono"
-                className="chevron-icono"
-              />
+              <Link href="/catalogo/virtual">
+                <Image
+                  width={50}
+                  height={50}
+                  src={chevronIcono}
+                  alt="Chevron Icono"
+                  className="chevron-icono"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -153,13 +157,15 @@ const Catalogo = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <Image
-                width={50}
-                height={50}
-                src={chevronIconoBlanco}
-                alt="Chevron Icono"
-                className="chevron-icono"
-              />
+              <Link href="/catalogo/audio">
+                <Image
+                  width={50}
+                  height={50}
+                  src={chevronIconoBlanco}
+                  alt="Chevron Icono"
+                  className="chevron-icono"
+                />
+              </Link>
             </div>
           </div>
         </div>

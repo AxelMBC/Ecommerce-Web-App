@@ -3,12 +3,14 @@
 import { usePathname } from 'next/navigation';
 import Header from '../../../header';
 import Footer from '../../../footer';
+import { productosMonitor } from '../productosMonitor';
 import ProductoIndividual from '../../ProductoIndividual';
-import { productosPc } from '../productosPc';
 
-const CatalogoPc = () => {
+const CatalogoMonitor = () => {
   const productoId = usePathname().split('/').pop();
-  const producto = productosPc.find((producto) => producto.slug === productoId);
+  const producto = productosMonitor.find(
+    (producto) => producto.slug === productoId,
+  );
 
   return (
     <div style={{ backgroundColor: '#120925' }}>
@@ -18,10 +20,9 @@ const CatalogoPc = () => {
       ) : (
         <div>Producto not found</div> // Handling undefined here
       )}
-
       <Footer />
     </div>
   );
 };
 
-export default CatalogoPc;
+export default CatalogoMonitor;

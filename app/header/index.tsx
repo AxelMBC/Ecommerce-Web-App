@@ -29,22 +29,22 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          className="navbar-collapse d-flex justify-content-end collapse me-4"
-          id="navbarNavDropdown"
-        >
-          <ul className="navbar-nav custom-navbar-nav">
-            <li className="data-container px-4">
-              <Link className="btn" href="/catalogo">
+        <div className="container-fluid">
+          <ol
+            className="content row justify-content-end"
+            style={{ paddingRight: '80px' }}
+          >
+            <li className="content__item col-auto">
+              <Link className="link link--ersa" href="/catalogo">
                 Catalogo
               </Link>
             </li>
-            <li className="data-container px-4">
-              <Link className="btn" href="/nosotros">
+            <li className="content__item col-auto ">
+              <Link className="link link--ersa" href="/nosotros">
                 Nosotros
               </Link>
             </li>
-          </ul>
+          </ol>
         </div>
       </div>
     </header>

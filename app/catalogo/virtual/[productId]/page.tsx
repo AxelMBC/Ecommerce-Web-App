@@ -4,11 +4,13 @@ import { usePathname } from 'next/navigation';
 import Header from '../../../header';
 import Footer from '../../../footer';
 import ProductoIndividual from '../../ProductoIndividual';
-import { productosPc } from '../productosPc';
+import { productosVirtual } from '../productosVirtual';
 
-const CatalogoPc = () => {
+const CatalogoVirtual = () => {
   const productoId = usePathname().split('/').pop();
-  const producto = productosPc.find((producto) => producto.slug === productoId);
+  const producto = productosVirtual.find(
+    (producto) => producto.slug === productoId,
+  );
 
   return (
     <div style={{ backgroundColor: '#120925' }}>
@@ -24,4 +26,4 @@ const CatalogoPc = () => {
   );
 };
 
-export default CatalogoPc;
+export default CatalogoVirtual;

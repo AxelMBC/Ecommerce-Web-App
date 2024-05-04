@@ -1,15 +1,14 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
-import { monitoresProductos } from './monitoresProductos';
+import { productosMonitor } from './productosMonitor';
 import chevronIcono from '/public/imagenes/iconos/chevron.png';
+import { convertirPrecio } from '@/app/utils/convertirPrecio';
 
 const CatalogoMon = () => {
-  //funcion para convertir el precio que es un numero a una cadena de caracteres que incluya $ y , para separar los miles
-  const convertirPrecio = (precio: number) => {
-    return `$${precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
-  };
-
+  const router = useRouter();
   return (
     <div style={{ backgroundColor: '#120925' }}>
       <Header />
@@ -21,7 +20,7 @@ const CatalogoMon = () => {
         >
           <div className="col-10">
             <h2 style={{ color: 'white' }}>
-              <span className="fancy">PCs</span> Disponibles
+              Navega entre <span className="fancy">Monitores</span> Elite
             </h2>
           </div>
         </div>
@@ -32,12 +31,14 @@ const CatalogoMon = () => {
         >
           <div className="col-xl-12 col-xxl-11">
             <div className="row ">
-              {monitoresProductos.map((producto) => {
-                console.log('Producto Individual: ', producto);
+              {productosMonitor.map((producto) => {
                 return (
                   <div
                     className="col-sm-12 col-md-6 col-xxl-4"
                     key={producto.id}
+                    onClick={() =>
+                      router.push(`/catalogo/monitores/${producto.slug}`)
+                    }
                   >
                     <div
                       style={{
@@ -52,10 +53,10 @@ const CatalogoMon = () => {
                       className="carta-personalizada"
                     >
                       <div className=" d-flex justify-content-center">
-                        {producto.imagen ? (
+                        {producto.imagen1 ? (
                           <Image
                             alt={`${producto.nombre} Imagen`}
-                            src={producto.imagen}
+                            src={producto.imagen1}
                             width={200}
                             height={200}
                           />

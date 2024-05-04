@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { convertirPrecio } from '../../utils/convertirPrecio';
 import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
@@ -7,10 +9,7 @@ import { productosPc } from './productosPc';
 import chevronIcono from '/public/imagenes/iconos/chevron.png';
 
 const CatalogoPc = () => {
-  //funcion para convertir el precio que es un numero a una cadena de caracteres que incluya $ y , para separar los miles
-  const convertirPrecio = (precio: number) => {
-    return `$${precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
-  };
+  const router = useRouter();
 
   return (
     <div style={{ backgroundColor: '#120925' }}>
@@ -23,7 +22,7 @@ const CatalogoPc = () => {
         >
           <div className="col-10">
             <h2 style={{ color: 'white' }}>
-              <span className="fancy">PCs</span> Disponibles
+              Explora <span className="fancy">PCs</span> de primera categoría
             </h2>
           </div>
         </div>
@@ -35,11 +34,11 @@ const CatalogoPc = () => {
           <div className="col-xl-12 col-xxl-11">
             <div className="row ">
               {productosPc.map((producto) => {
-                console.log('Producto Individual: ', producto);
                 return (
                   <div
                     className="col-sm-12 col-md-6 col-xxl-4"
                     key={producto.id}
+                    onClick={() => router.push(`/catalogo/pc/${producto.slug}`)}
                   >
                     <div
                       style={{
@@ -54,10 +53,10 @@ const CatalogoPc = () => {
                       className="carta-personalizada"
                     >
                       <div className=" d-flex justify-content-center">
-                        {producto.imagen ? (
+                        {producto.imagen1 ? (
                           <Image
                             alt={`${producto.nombre} Imagen`}
-                            src={producto.imagen}
+                            src={producto.imagen1}
                             width={200}
                             height={200}
                           />

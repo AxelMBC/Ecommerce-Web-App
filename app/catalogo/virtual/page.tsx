@@ -1,17 +1,15 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { convertirPrecio } from '@/app/utils/convertirPrecio';
 import Header from '../../header';
 import Footer from '../../footer';
-import { virtualProductos } from './virtualProductos';
+import { productosVirtual } from './productosVirtual';
 import chevronIcono from '/public/imagenes/iconos/chevron.png';
 
 const CatalogoVirtual = () => {
-  //funcion para convertir el precio que es un numero a una cadena de caracteres que incluya $ y , para separar los miles
-  const convertirPrecio = (precio: number) => {
-    return `$${precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
-  };
-
+  const router = useRouter();
   return (
     <div style={{ backgroundColor: '#120925' }}>
       <Header />
@@ -23,7 +21,8 @@ const CatalogoVirtual = () => {
         >
           <div className="col-10">
             <h2 style={{ color: 'white' }}>
-              <span className="fancy">PCs</span> Disponibles
+              Descubre el mundo de la{' '}
+              <span className="fancy">Relidad Virtual</span>
             </h2>
           </div>
         </div>
@@ -34,12 +33,14 @@ const CatalogoVirtual = () => {
         >
           <div className="col-xl-12 col-xxl-11">
             <div className="row ">
-              {virtualProductos.map((producto) => {
-                console.log('Producto Individual: ', producto);
+              {productosVirtual.map((producto) => {
                 return (
                   <div
                     className="col-sm-12 col-md-6 col-xxl-4"
                     key={producto.id}
+                    onClick={() =>
+                      router.push(`/catalogo/virtual/${producto.slug}`)
+                    }
                   >
                     <div
                       style={{
@@ -54,10 +55,10 @@ const CatalogoVirtual = () => {
                       className="carta-personalizada"
                     >
                       <div className=" d-flex justify-content-center">
-                        {producto.imagen ? (
+                        {producto.imagen1 ? (
                           <Image
                             alt={`${producto.nombre} Imagen`}
-                            src={producto.imagen}
+                            src={producto.imagen1}
                             width={200}
                             height={200}
                           />

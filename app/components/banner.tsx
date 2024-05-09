@@ -39,6 +39,17 @@ const CategoriaDestacada: React.FC = ({}) => {
       >
         <span className="fancy">Productos</span> Destacados
       </h3>
+      <div className="d-flex justify-content-center">
+        {' '}
+        <hr
+          style={{
+            color: 'white',
+            height: '3px',
+            width: '80%',
+          }}
+        />
+      </div>
+
       <div className="d-flex justify-content-center py-4">
         <div className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">

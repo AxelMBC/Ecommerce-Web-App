@@ -28,114 +28,85 @@ const Home = () => {
           <Banner />
         </div>
 
-        <section className="my-4">
-          <div className="container mx-auto p-4">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-12 col-sm-6 col-lg-3 mb-4">
-                <div
-                  className="card p-3 shadow"
-                  onClick={() => router.push('/catalogo/pc')}
-                  style={{ height: '650px' }}
-                >
-                  <div className="row pb-4">
-                    <Image
-                      src={categoriaPcImg}
-                      alt="Categoria PCs"
-                      height={200}
-                      objectFit="contain"
-                      style={{ width: 'auto' }}
-                    />
-                  </div>
-
-                  <h3>PCs</h3>
-                  <p>
-                    Esta categoría incluye computadoras de escritorio, laptops,
-                    y componentes esenciales como tarjetas gráficas,
-                    procesadores, memorias RAM, y discos duros. Es ideal para
-                    gamers y profesionales que buscan alto rendimiento y
-                    personalización en sus equipos.
-                  </p>
-                </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 mb-4">
-                <div
-                  className="card p-3 shadow"
-                  onClick={() => router.push('/catalogo/monitores-accesorios')}
-                  style={{ height: '650px' }}
-                >
-                  <div className="row pb-4">
-                    <Image
-                      src={categoriaMonitor}
-                      alt="Categoria PCs"
-                      height={200}
-                      objectFit="contain"
-                    />
-                  </div>
-                  <h3>Monitores y Accesorios</h3>
-                  <p>
-                    Aquí se ofrecen monitores de alta resolución y baja
-                    latencia, cruciales para una experiencia de juego óptima.
-                    También se incluyen accesorios como teclados mecánicos,
-                    ratones con alta precisión y alfombrillas de ratón diseñadas
-                    para el gaming.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="col-12 col-sm-6 col-lg-3 mb-4"
-                style={{ height: '650px' }}
-              >
-                <div
-                  className="card p-3 shadow"
-                  onClick={() => router.push('/catalogo/vr-simulacion')}
-                  style={{ height: '650px' }}
-                >
-                  <div className="row pb-4">
-                    <Image
-                      src={categoriaRealidadVirtual}
-                      alt="Categoria PCs"
-                      height={200}
-                      objectFit="contain"
-                      style={{ width: 'auto' }}
-                    />
-                  </div>
-                  <h3>Realidad Virtual y Simulación</h3>
-                  <p>
-                    Esta categoría abarca desde gafas de realidad virtual hasta
-                    accesorios de simulación como volantes y joysticks. Es
-                    perfecta para usuarios que buscan una inmersión total en sus
-                    juegos o experiencias virtuales.
-                  </p>
-                </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 mb-4">
-                <div
-                  className="card p-3 shadow"
-                  onClick={() => router.push('/catalogo/audio')}
-                  style={{ height: '650px' }}
-                >
-                  <div className="row pb-4">
-                    <Image
-                      src={categoriaAudio}
-                      alt="Categoria PCs"
-                      height={200}
-                      objectFit="contain"
-                      style={{ width: 'auto' }}
-                    />
-                  </div>
-                  <h3>Audio</h3>
-                  <p>
-                    Equipos de audio de alta fidelidad, micrófonos, y cámaras
-                    para streaming conforman esta categoría. Esencial para
-                    gamers que comparten su juego en línea o para aquellos que
-                    disfrutan de la máxima calidad de audio en sus sesiones de
-                    juego.
-                  </p>
-                </div>
-              </div>
+        <div className="contenedor-categorias">
+          <div className="carta-categorias">
+            <div className="image">
+              <Image
+                src={categoriaPcImg}
+                alt="Laptop Gamer"
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className="content">
+              <h3>PCs</h3>
+              <p>
+                Esta categoría incluye computadoras de escritorio, laptops, y
+                componentes esenciales como tarjetas gráficas, procesadores,
+                memorias RAM, y discos duros. Es ideal para gamers y
+                profesionales que buscan alto rendimiento y personalización en
+                sus equipos.
+              </p>
             </div>
           </div>
-        </section>
+          <div className="carta-categorias">
+            <div className="image">
+              <Image
+                src={categoriaMonitor}
+                alt="Laptop Gamer"
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className="content">
+              <h3>Monitores y Accesorios</h3>
+              <p>
+                Aquí se ofrecen monitores de alta resolución y baja latencia,
+                cruciales para una experiencia de juego óptima. También se
+                incluyen accesorios como teclados mecánicos, ratones con alta
+                precisión y alfombrillas de ratón diseñadas para el gaming.
+              </p>
+            </div>
+          </div>
+          <div className="carta-categorias">
+            <div className="image">
+              <Image
+                src={categoriaRealidadVirtual}
+                alt="Laptop Gamer"
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className="content">
+              <h3>Realidad Virtual y Simulación</h3>
+              <p>
+                Esta categoría abarca desde gafas de realidad virtual hasta
+                accesorios de simulación como volantes y joysticks. Es perfecta
+                para usuarios que buscan una inmersión total en sus juegos o
+                experiencias virtuales.
+              </p>
+            </div>
+          </div>
+          <div className="carta-categorias">
+            <div className="image">
+              <Image
+                src={categoriaAudio}
+                alt="Laptop Gamer"
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className="content">
+              <h3>Audio</h3>
+              <p>
+                Equipos de audio de alta fidelidad, micrófonos, y cámaras para
+                streaming conforman esta categoría. Esencial para gamers que
+                comparten su juego en línea o para aquellos que disfrutan de la
+                máxima calidad de audio en sus sesiones de juego.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <section id="sobre-nosotros" className="my-4 bg-gray-100 py-4">
           <div className="d-flex container mx-auto ">

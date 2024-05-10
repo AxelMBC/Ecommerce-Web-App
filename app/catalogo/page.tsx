@@ -84,7 +84,7 @@ const Catalogo = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <Link href="/catalogo/monitores">
+              <Link href="/catalogo/monitor">
                 <Image
                   width={50}
                   height={50}

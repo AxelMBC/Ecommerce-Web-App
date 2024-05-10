@@ -29,7 +29,10 @@ const Home = () => {
         </div>
 
         <div className="contenedor-categorias">
-          <div className="carta-categorias">
+          <div
+            className="carta-categorias"
+            onClick={() => router.push('/catalogo/pc')}
+          >
             <div className="image">
               <Image
                 src={categoriaPcImg}
@@ -49,7 +52,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carta-categorias">
+          <div
+            className="carta-categorias"
+            onClick={() => router.push('/catalogo/monitor')}
+          >
             <div className="image">
               <Image
                 src={categoriaMonitor}
@@ -68,7 +74,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carta-categorias">
+          <div
+            className="carta-categorias"
+            onClick={() => router.push('/catalogo/virtual')}
+          >
             <div className="image">
               <Image
                 src={categoriaRealidadVirtual}
@@ -87,7 +96,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carta-categorias">
+          <div
+            className="carta-categorias"
+            onClick={() => router.push('/catalogo/audio')}
+          >
             <div className="image">
               <Image
                 src={categoriaAudio}

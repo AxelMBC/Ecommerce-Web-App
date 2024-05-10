@@ -37,7 +37,7 @@ const CatalogoMon = () => {
                     className="col-sm-12 col-md-6 col-xxl-4"
                     key={producto.id}
                     onClick={() =>
-                      router.push(`/catalogo/monitores/${producto.slug}`)
+                      router.push(`/catalogo/monitor/${producto.slug}`)
                     }
                   >
                     <div
@@ -52,7 +52,7 @@ const CatalogoMon = () => {
                       }}
                       className="carta-personalizada"
                     >
-                      <div className=" d-flex justify-content-center">
+                      <div className="d-flex justify-content-center">
                         {producto.imagen1 ? (
                           <Image
                             alt={`${producto.nombre} Imagen`}

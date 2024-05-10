@@ -19,6 +19,25 @@ import categoriaAudio from '/public/imagenes/categorias/categoria_audio.jpg';
 
 const Home = () => {
   const router = useRouter();
+  const [padding, setPadding] = useState('0px');
+
+  useEffect(() => {
+    const updatePadding = () => {
+      const angle = 11; // Skew angle in degrees
+      const radians = (angle * Math.PI) / 180; // Convert to radians
+      const containerWidth = window.innerWidth; // Get container width
+      const calculatedPadding = (Math.tan(radians) * containerWidth) / 2; // Calculate padding
+      document.documentElement.style.setProperty(
+        '--dynamic-padding',
+        `${calculatedPadding}px`,
+      ); // Update CSS variable
+    };
+
+    updatePadding(); // Initial calculation
+    window.addEventListener('resize', updatePadding); // Update on resize
+
+    return () => window.removeEventListener('resize', updatePadding); // Cleanup
+  }, []);
 
   return (
     <div className="flex min-h-screen flex-col p-6">
@@ -119,35 +138,38 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <section id="sobre-nosotros" className="my-4 bg-gray-100 py-4">
-          <div className="d-flex container mx-auto ">
-            <div className="row justify-content-center">
-              <div className="col-4">
-                <h3 className="mb-4 text-3xl font-bold">Sobre InnovaSphere</h3>
-                <p>
-                  En InnovaSphere, lideramos la innovación en el comercio
-                  electrónico de productos tecnológicos. Nos dedicamos a
-                  brindarte lo último en tecnología con un servicio al cliente
-                  excepcional y precios sin competencia. Creemos en hacer la
-                  tecnología accesible para enriquecer la vida cotidiana de
-                  nuestros clientes.
-                </p>
-                <Link href="/" className="btn-about-us mt-6 inline-block">
-                  Conoce Más
-                </Link>
-              </div>
-              <div className="col-8">
-                <Image
-                  src={InnovationImage}
-                  alt="Sobre InnovaSphere"
-                  width={800}
-                  height={400}
-                />
+        <div className="container-diagonal">
+          <div className="diagonal-box">
+            <div className="d-flex container mx-auto">
+              <div className="row justify-content-center">
+                <div className="col-4">
+                  <h3 className="mb-4 text-3xl font-bold">
+                    Sobre InnovaSphere
+                  </h3>
+                  <p>
+                    En InnovaSphere, lideramos la innovación en el comercio
+                    electrónico de productos tecnológicos. Nos dedicamos a
+                    brindarte lo último en tecnología con un servicio al cliente
+                    excepcional y precios sin competencia. Creemos en hacer la
+                    tecnología accesible para enriquecer la vida cotidiana de
+                    nuestros clientes.
+                  </p>
+                  <Link href="/" className="btn-about-us mt-6 inline-block">
+                    Conoce Más
+                  </Link>
+                </div>
+                <div className="col-8">
+                  <Image
+                    src={InnovationImage}
+                    alt="Sobre InnovaSphere"
+                    width={800}
+                    height={400}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <Footer />
       </main>
     </div>

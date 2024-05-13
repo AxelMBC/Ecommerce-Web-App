@@ -1,0 +1,9 @@
+.btn-custom {
+  background-color: #120925;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-image: linear-gradient(-135deg, #ff0084, #33001b);
+  color: white;
+}

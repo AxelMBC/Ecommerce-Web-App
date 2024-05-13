@@ -32,9 +32,10 @@ const Catalogo = () => {
             <Image
               src={categoriaPcImg}
               alt="Categoria PCs"
-              height={200}
-              objectFit="contain"
-              style={{ width: 'auto' }}
+              className="imagen-categoria-pc"
+              height={169}
+              width={300}
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
           <div className="col-10 col-lg-7">
@@ -51,11 +52,13 @@ const Catalogo = () => {
               </p>
               <Link href="/catalogo/pc">
                 <Image
-                  width={50}
-                  height={50}
                   src={chevronIcono}
                   alt="Chevron Icono"
                   className="chevron-icono"
+                  style={{
+                    width: '40%',
+                    height: 'auto',
+                  }}
                 />
               </Link>
             </div>
@@ -67,9 +70,10 @@ const Catalogo = () => {
             <Image
               src={categoriaMonitorImagen}
               alt="Monitor Categoria"
-              width={300}
-              objectFit="contain"
-              style={{ height: 'auto' }}
+              style={{
+                width: '40%',
+                height: 'auto',
+              }}
             />
           </div>
           <div className="col-10 col-lg-7">
@@ -86,11 +90,13 @@ const Catalogo = () => {
               </p>
               <Link href="/catalogo/monitor">
                 <Image
-                  width={50}
-                  height={50}
                   src={chevronIconoBlanco}
                   alt="Chevron Icono"
                   className="chevron-icono"
+                  style={{
+                    width: '40%',
+                    height: 'auto',
+                  }}
                 />
               </Link>
             </div>
@@ -124,11 +130,13 @@ const Catalogo = () => {
               </p>
               <Link href="/catalogo/virtual">
                 <Image
-                  width={50}
-                  height={50}
                   src={chevronIcono}
                   alt="Chevron Icono"
                   className="chevron-icono"
+                  style={{
+                    width: '40%',
+                    height: 'auto',
+                  }}
                 />
               </Link>
             </div>

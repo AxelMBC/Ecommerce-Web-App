@@ -5,20 +5,22 @@
 
 .container-diagonal {
   padding-top: var(--dynamic-padding);
-  padding-bottom: var(--dynamic-padding);
+  padding-bottom: 184px;
+  background-color: #120925;
 }
 
 .diagonal-box::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -250px;
   left: 0;
   right: 0;
   bottom: 0;
   background-image: linear-gradient(-135deg, #ff0084, #33001b);
-  transform: skewY(-11deg);
+  transform: skewY(-3deg);
   z-index: 0;
   transform-origin: 50% 0;
+  height: 735px;
 }
 
 .card {
@@ -42,10 +44,6 @@
 
 h2 {
   font-size: 50px !important;
-}
-
-.catalogo-seccion {
-  height: 400px;
 }
 
 .chevron-icono {
@@ -114,7 +112,7 @@ h2 {
 }
 
 .contenedor-categorias .carta-categorias:hover {
-  height: 400px;
+  height: 450px;
   cursor: pointer;
 }
 
@@ -153,4 +151,8 @@ h2 {
 
 .bg-two:before {
   background-image: linear-gradient(-135deg, #ff0084, #33001b);
+}
+
+.catalogo-seccion {
+  padding: 100px 0;
 }

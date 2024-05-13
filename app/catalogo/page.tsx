@@ -10,170 +10,168 @@ import chevronIconoBlanco from '/public/imagenes/iconos/chevron-blanco.png';
 import categoriaMonitorImagen from '/public/imagenes/categorias/categoria_monitor.jpg';
 import categoriaRealidadVirtual from '/public/imagenes/categorias/categoria_vr.jpg';
 import categoriaAudioImagen from '/public/imagenes/categorias/categoria_audio.jpg';
+import { sign } from 'crypto';
 
 const Catalogo = () => {
   return (
-    <div style={{ backgroundColor: '#120925' }}>
+    <div id="categorias" style={{ backgroundColor: '#120925' }}>
       <Header />
 
       <div className="container-fluid">
         <div className="row justify-content-center titulo-principal my-4">
           <div className="col-10">
             <h2 style={{ color: 'white' }}>
-              <span className="fancy">Catalogo</span> de Productos
+              <span className="fancy">Categorias</span> de Productos
             </h2>
           </div>
         </div>
         <div
-          className="row justify-content-center catalogo-seccion align-items-center"
+          className="row justify-content-start catalogo-seccion align-items-center"
           style={{ backgroundColor: '#FFF5EA' }}
         >
           <div className="col-10 col-lg-4">
-            <Image
-              src={categoriaPcImg}
-              alt="Categoria PCs"
-              className="imagen-categoria-pc"
-              height={169}
-              width={300}
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
+            <div className="d-flex justify-content-center">
+              <Image
+                src={categoriaPcImg}
+                alt="Categoria PCs"
+                className="imagen-categoria-pc"
+                style={{
+                  width: '60%',
+                  height: 'auto',
+                }}
+              />
+            </div>
           </div>
-          <div className="col-10 col-lg-7">
+          <div className="col-10 col-lg-5 col-xl-4">
             <h3>PCs</h3>
-            <div className="d-flex">
-              <p className="pe-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <Link href="/catalogo/pc">
-                <Image
-                  src={chevronIcono}
-                  alt="Chevron Icono"
-                  className="chevron-icono"
-                  style={{
-                    width: '40%',
-                    height: 'auto',
-                  }}
-                />
-              </Link>
+            <p className="pe-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="col">
+            <div className="row justify-content-evenly">
+              <div className="col-auto" style={{ paddingRight: '40px' }}>
+                <Link href="/catalogo/pc" className="">
+                  <i className="chevron-icono-oscuro fa-solid fa-chevron-right"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row justify-content-center catalogo-seccion align-items-center fc-white">
+        <div className="row justify-content-start catalogo-seccion align-items-center fc-white">
           <div className="col-10 col-lg-4">
-            <Image
-              src={categoriaMonitorImagen}
-              alt="Monitor Categoria"
-              style={{
-                width: '40%',
-                height: 'auto',
-              }}
-            />
+            <div className="d-flex justify-content-center">
+              <Image
+                src={categoriaMonitorImagen}
+                alt="Monitor Categoria"
+                style={{
+                  width: '40%',
+                  height: 'auto',
+                }}
+              />
+            </div>
           </div>
-          <div className="col-10 col-lg-7">
+          <div className="col-10 col-lg-5 col-xl-4">
             <h3>Monitores</h3>
-            <div className="d-flex">
-              <p className="pe-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <Link href="/catalogo/monitor">
-                <Image
-                  src={chevronIconoBlanco}
-                  alt="Chevron Icono"
-                  className="chevron-icono"
-                  style={{
-                    width: '40%',
-                    height: 'auto',
-                  }}
-                />
-              </Link>
+            <p className="pe-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="col">
+            <div className="row justify-content-evenly">
+              <div className="col-auto" style={{ paddingRight: '40px' }}>
+                <Link href="/catalogo/monitor" className="">
+                  <i className="chevron-icono-claro fa-solid fa-chevron-right"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
         <div
-          className="row justify-content-center catalogo-seccion align-items-center"
+          className="row justify-content-start catalogo-seccion align-items-center"
           style={{ backgroundColor: '#FFF5EA' }}
         >
           <div className="col-10 col-lg-4">
-            <Image
-              src={categoriaRealidadVirtual}
-              alt="Categoria PCs"
-              height={200}
-              objectFit="contain"
-              style={{ width: 'auto' }}
-            />
+            <div className="d-flex justify-content-center">
+              <Image
+                src={categoriaRealidadVirtual}
+                alt="Categoria Realidad Virtual"
+                height={200}
+                objectFit="contain"
+                style={{ width: 'auto' }}
+              />
+            </div>
           </div>
-          <div className="col-10 col-lg-7">
+          <div className="col-10 col-lg-5 col-xl-4">
             <h3>Realidad Virtual</h3>
-            <div className="d-flex">
-              <p className="pe-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <Link href="/catalogo/virtual">
-                <Image
-                  src={chevronIcono}
-                  alt="Chevron Icono"
-                  className="chevron-icono"
-                  style={{
-                    width: '40%',
-                    height: 'auto',
-                  }}
-                />
-              </Link>
+
+            <p className="pe-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="col">
+            <div className="row justify-content-evenly">
+              <div className="col-auto" style={{ paddingRight: '40px' }}>
+                <Link href="/catalogo/virtual" className="">
+                  <i className="chevron-icono-oscuro fa-solid fa-chevron-right"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row justify-content-center catalogo-seccion align-items-center fc-white">
+        <div className="row justify-content-start catalogo-seccion align-items-center fc-white">
           <div className="col-10 col-lg-4">
-            <Image
-              src={categoriaAudioImagen}
-              alt="Monitor Categoria"
-              width={300}
-              objectFit="contain"
-              style={{ height: 'auto' }}
-            />
+            <div className="d-flex justify-content-center">
+              <Image
+                src={categoriaAudioImagen}
+                alt="Monitor Categoria"
+                width={300}
+                objectFit="contain"
+                style={{ height: 'auto' }}
+              />
+            </div>
           </div>
-          <div className="col-10 col-lg-7">
+          <div className="col-10 col-lg-5 col-xl-4">
             <h3>Audio</h3>
-            <div className="d-flex">
-              <p className="pe-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <Link href="/catalogo/audio">
-                <Image
-                  width={50}
-                  height={50}
-                  src={chevronIconoBlanco}
-                  alt="Chevron Icono"
-                  className="chevron-icono"
-                />
-              </Link>
+
+            <p className="pe-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="col">
+            <div className="row justify-content-evenly">
+              <div className="col-auto" style={{ paddingRight: '40px' }}>
+                <Link href="/catalogo/monitor" className="">
+                  <i className="chevron-icono-claro fa-solid fa-chevron-right"></i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

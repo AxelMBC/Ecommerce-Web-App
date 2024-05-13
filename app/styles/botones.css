@@ -7,3 +7,25 @@
   background-image: linear-gradient(-135deg, #ff0084, #33001b);
   color: white;
 }
+
+.chevron-icono-oscuro {
+  color: #120925;
+  font-size: 60px;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+}
+
+.chevron-icono-oscuro:hover {
+  opacity: 0.9;
+}
+
+.chevron-icono-claro {
+  color: white;
+  font-size: 60px;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+}
+
+.chevron-icono-claro:hover {
+  opacity: 0.9;
+}

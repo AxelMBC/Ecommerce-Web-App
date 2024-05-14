@@ -16,7 +16,7 @@ const CatalogoAudio = () => {
     <div style={{ backgroundColor: '#120925' }}>
       <Header />
       {producto ? (
-        <ProductoIndividual producto={producto} />
+        <ProductoIndividual producto={producto} categoria="audio" />
       ) : (
         <div>Producto No Encontrado </div>
       )}

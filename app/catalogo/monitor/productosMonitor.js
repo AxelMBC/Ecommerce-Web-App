@@ -22,6 +22,7 @@ export const productosMonitor = [
     id: 1,
     slug: 'samsung-monitor-curvo-27',
     nombre: 'Samsung Monitor Curvo 27',
+    titulo: 'SAMSUNG Monitor Curvo 27" pulgadas',
     detalles: 'Potencia gráfica ininterrumpida',
     detallesTecnicos:
       'SAMSUNG Monitor Curvo 27" pulgadas, sin biseles, FHD 1920x1080, Game Mode, FreeSync, Eco Saving Plus, Flicker Free, 1x HDMI 1.4, 1x D-sub, 4ms(GTG), Dark Blue Gray (LC27R500FHLXZX)',
@@ -37,6 +38,7 @@ export const productosMonitor = [
     id: 2,
     slug: 'samsung-curvo-odyssey',
     nombre: 'Samsung Curvo Odyssey',
+    titulo: 'SAMSUNG Monitor Gaming 49" Curvo Odyssey G9 OLED',
     detalles: 'Amplitud Incomparable',
     detallesTecnicos:
       'SAMSUNG Monitor Gaming 49" Curvo Odyssey G9 OLED .03 ms 240 Hz (LS49CG930SLXZX)',
@@ -51,6 +53,7 @@ export const productosMonitor = [
     id: 3,
     slug: 'apple-studio-display',
     nombre: 'Apple Studio Display',
+    titulo: 'Apple Studio Display	27 Pulgadas Resolución	5K',
     detalles: 'El mejor diseño en tus manos',
     detallesTecnicos:
       'Marca	Apple Tamaño de la pantalla	27 Pulgadas Resolución	5K UHD 2880p Descripción de la superficie de la pantalla	Brillante Tiempo de respuesta	1 Milliseconds',
@@ -65,6 +68,7 @@ export const productosMonitor = [
     id: 4,
     slug: 'quian-monitor',
     nombre: 'Qian Monitor',
+    titulo: 'Qian Monitor LED sin Marco de 21,5" Pulgadas',
     detalles: 'Colores que impactan',
     detallesTecnicos:
       'Qian Monitor LED sin Marco de 21,5" Pulgadas, Full HD 1920x1080p, 16,7 Millones de Colores, Monitor PC 75 Hz, 220 CD/m2 | HDMI/VGA | VESA 75 x 75 mm | Inclinación Ajustable',
@@ -79,6 +83,7 @@ export const productosMonitor = [
     id: 5,
     slug: 'acteck-monitor',
     nombre: 'Acteck Monitor',
+    titulo: 'Acteck Monitor 23.8" Plano',
     detalles: 'Gran sonido de calidad',
     detallesTecnicos:
       'Acteck Monitor 23.8" Plano 75 HZ HDMI + VGA + DC Altavoces 3 W Negro Captive SP240',
@@ -93,6 +98,7 @@ export const productosMonitor = [
     id: 6,
     slug: 'lg-monitor',
     nombre: 'LG Monitor',
+    titulo: 'LG 24GQ50F-B Ultragear Gaming Monitor 24"',
     detalles: 'Colores increíbles',
     detallesTecnicos:
       'LG 24GQ50F-B Ultragear Gaming Monitor 24" VA FHD 165Hz 1ms MBR AMD FreeSync HDMI 1.4 X 2, DP 1.2 X 1',

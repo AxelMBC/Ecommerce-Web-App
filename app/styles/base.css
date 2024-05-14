@@ -1,3 +1,7 @@
 .fc-white {
   color: white;
 }
+
+.fc-black {
+  color: black !important;
+}

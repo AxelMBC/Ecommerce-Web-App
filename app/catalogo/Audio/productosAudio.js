@@ -22,6 +22,7 @@ export const productosAudio = [
     id: 1,
     slug: 'sony-audifonos-inalambricos',
     nombre: 'Sony Inalámbricos',
+    titulo: 'Sony Audífonos inalámbricos on-Ear WH-CH520',
     detalles: 'Potencia de sonido incomparable',
     detallesTecnicos:
       'Sony Audífonos inalámbricos on-Ear WH-CH520 hasta 50 Horas de duración de batería, Negro',
@@ -36,6 +37,7 @@ export const productosAudio = [
     id: 2,
     slug: 'JBL-beam-audifonos',
     nombre: 'JBL Beam Audífonos',
+    titulo: 'JBL Vibe Beam Audífonos Inalámbricos',
     detalles: 'Calidad de sonido que recordaras',
     detallesTecnicos:
       'JBL Vibe Beam Audífonos Inalámbricos Bluetooth, Drivers 8mm, Reproducción 32 Horas, Resistentes al Agua y al Polvo IP57 - Negro',
@@ -50,6 +52,7 @@ export const productosAudio = [
     id: 3,
     slug: 'sony-intraauriculares',
     nombre: 'Sony Intraauriculares',
+    titulo: 'Sony Intraauriculares WI-C100',
     detalles: 'Comdidad para el deporte',
     detallesTecnicos:
       'Sony WI-C100 - Audífonos inalámbricos intraauriculares con Banda para el Cuello y micrófono para Llamadas con Manos Libres, Negro, WIC100/B',
@@ -64,6 +67,7 @@ export const productosAudio = [
     id: 4,
     slug: 'stf-inalambricos-aurum',
     nombre: 'STF Inalambricos Aurum',
+    titulo: 'STF Audífonos De Diadema Inalámbricos Aurum',
     detalles: 'Ligereza y comodidad para tus oídos',
     detallesTecnicos:
       'STF Audífonos De Diadema Inalámbricos Aurum, Conexión 5.0, Micrófono Incorporado para Llamadas, Conexión De Cable 3.5 mm, Tiempo De Uso De hasta 10 Horas, Alcance Inalámbrico De 10 Metros (Gris)',
@@ -78,6 +82,7 @@ export const productosAudio = [
     id: 5,
     slug: 'firstop-auriculares',
     nombre: 'Firstop Auriculares',
+    titulo: 'Firstop Auriculares Bluetooth',
     detalles: 'No le tengas miedo a la lluvia',
     detallesTecnicos:
       'Firstop Auriculares Bluetooth, Audífonos Inalámbricos Impermeables IPX7, Auriculares con Reducción de Ruido y Ajuste Seguro para Deportes y Gimnasia, con Micrófono Incorporado',
@@ -92,6 +97,7 @@ export const productosAudio = [
     id: 6,
     slug: 'soundcore-anker-audifonos',
     nombre: 'Anker Audífonos',
+    titulo: 'Soundcore by Anker Life Q30',
     detalles: 'Para que disfrutes tus viajes',
     detallesTecnicos:
       'Soundcore by Anker Life Q30 - Audífonos híbridos con cancelación activa de ruido, múltiples modos, alta resolución, tiempo de reproducción 40 h, carga rápida, auriculares suaves, Bluetooth, para viaje',

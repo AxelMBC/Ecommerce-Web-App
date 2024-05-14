@@ -14,7 +14,7 @@ const CatalogoPc = () => {
     <div style={{ backgroundColor: '#120925' }}>
       <Header />
       {producto ? (
-        <ProductoIndividual producto={producto} />
+        <ProductoIndividual producto={producto} categoria="pc" />
       ) : (
         <div>Producto not found</div> // Handling undefined here
       )}

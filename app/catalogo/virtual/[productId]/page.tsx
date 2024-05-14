@@ -16,7 +16,7 @@ const CatalogoVirtual = () => {
     <div style={{ backgroundColor: '#120925' }}>
       <Header />
       {producto ? (
-        <ProductoIndividual producto={producto} />
+        <ProductoIndividual producto={producto} categoria="virtual" />
       ) : (
         <div>Producto not found</div> // Handling undefined here
       )}

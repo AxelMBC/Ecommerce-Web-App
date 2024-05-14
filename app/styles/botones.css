@@ -29,3 +29,122 @@
 .chevron-icono-claro:hover {
   opacity: 0.9;
 }
+
+.btn-producto {
+  position: relative;
+  padding: 24px 64px;
+  border-radius: 100vw;
+  background-color: transparent;
+  font-family: 'Playfair Display', serif;
+  color: #fafafa;
+  border: solid 1px rgba(250, 250, 250, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
+  -webkit-mask-image: -webkit-radial-gradient(
+    white,
+    black
+  ); /* force safari to respect border radius */
+}
+
+.btn-producto .btn-producto-text {
+  position: relative;
+  z-index: 2;
+  font-size: 25px;
+}
+
+.btn-producto .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+  background-color: DarkSlateBlue;
+}
+
+.btn-producto .fill-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: MidnightBlue;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
+  transform: translateY(-100%);
+}
+
+.btn-producto:hover {
+  border-color: MidnightBlue;
+  transform: translateY(-4px);
+}
+
+.btn-producto:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+
+.btn-producto:hover .fill-container::after {
+  transform: translateY(0);
+}
+
+/* Home */
+.btn-lead {
+  position: relative;
+  padding: 24px 64px;
+  border-radius: 100vw;
+  background-color: transparent;
+  font-family: 'Playfair Display', serif;
+  color: #fafafa;
+  border: solid 1px rgba(250, 250, 250, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
+  -webkit-mask-image: -webkit-radial-gradient(
+    white,
+    black
+  ); /* force safari to respect border radius */
+}
+
+.btn-lead .btn-lead-text {
+  position: relative;
+  z-index: 2;
+  font-size: 25px;
+}
+
+.btn-lead .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+  background-color: #2502c2;
+}
+
+.btn-lead .fill-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #210793;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
+  transform: translateY(-100%);
+}
+
+.btn-lead:hover {
+  border-color: #210793;
+  transform: translateY(-4px);
+}
+
+.btn-lead:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+
+.btn-lead:hover .fill-container::after {
+  transform: translateY(0);
+}

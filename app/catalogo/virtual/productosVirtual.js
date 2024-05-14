@@ -22,6 +22,7 @@ export const productosVirtual = [
     id: 1,
     slug: 'zakulu-gafas',
     nombre: 'Zakulu Gafas',
+    titulo: 'ZAKULU Traje de Gafas VR Gafas 3D VR',
     detalles: 'Experiencia Inmersiva',
     detallesTecnicos:
       'ZAKULU Traje de Gafas VR Gafas 3D VR Ajustables Realidad Virtual HD BLU-Ray Eye Protected Support 4.5-6.8 Pulgadas con Controlador Adecuado para iPhone y Android',
@@ -36,6 +37,7 @@ export const productosVirtual = [
     id: 2,
     slug: 'sendowtek-rv-3d',
     nombre: 'Sendowtek RV 3D',
+    titulo: 'Sendowtek Auriculares de Realidad Virtual',
     detalles: 'Cuidamos tu experiencia',
     detallesTecnicos:
       'Sendowtek Auriculares de Realidad Virtual Gafas VR 3D con Control Remoto Auriculares VR Gafas de Realidad Virtual con Auriculares y Sistema de Cuidado Ocular Ajustable para 4,5-6,7 Smartphones)',
@@ -50,6 +52,7 @@ export const productosVirtual = [
     id: 3,
     slug: 'meta-quest-2',
     nombre: 'Meta Quest 2',
+    titulo: 'Meta Quest 2 - Auriculares avanzados de realidad virtual',
     detalles: 'Potencia sin límites',
     detallesTecnicos:
       'Meta Quest 2 — Auriculares avanzados de realidad virtual todo en uno — 128 GB',
@@ -64,6 +67,7 @@ export const productosVirtual = [
     id: 4,
     slug: 'spoway-rv-gafas',
     nombre: 'Spoway RV Gafas',
+    titulo: 'SPOWAY Auriculares Realidad Virtual',
     detalles: 'La mejor tecnología',
     detallesTecnicos:
       'SPOWAY Auriculares Realidad Virtual Gafas VR 3D Lentes de Realidad Virtual New Virtual Reality Headset with Control Handle para Juegos Visión Panorámico Immersivo',
@@ -78,6 +82,7 @@ export const productosVirtual = [
     id: 5,
     slug: 'stayoung-vr-3d',
     nombre: 'Stayoung VR 3D',
+    titulo: 'STAYOUNG Auriculares VR 3D',
     detalles: 'Desata el poder',
     detallesTecnicos:
       'STAYOUNG Auriculares VR 3D, Auriculares de Realidad Virtual Compatible con iOS/Android, Gafas 3D VR con Control Remoto, para Smartphones de 4,7-6,7 Películas y Juegos',
@@ -92,6 +97,7 @@ export const productosVirtual = [
     id: 6,
     slug: 'gafas-vr-nintendo',
     nombre: 'Gafas VR Nintendo',
+    titulo: 'Gafas VR Nintendo Switch y OLED',
     detalles: 'Una nueva forma de jugar',
     detallesTecnicos:
       'Auriculares de realidad virtual ajustables para Nintendo Switch y OLED, lentes HD mejoradas, anteojos 3D compatibles con modelos de interruptor originales y OLED, kit de interruptor VR',

@@ -20,7 +20,7 @@
   transform: skewY(-3deg);
   z-index: 0;
   transform-origin: 50% 0;
-  height: 735px;
+  height: 700px;
 }
 
 .card {
@@ -71,15 +71,9 @@ h2 {
 }
 
 .producto-titulo {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #2d3b43;
-}
-
-.producto-precio {
-  font-size: 22px;
-  font-weight: 700;
-  color: #2d545e;
+  color: #120925;
 }
 
 #catalogo .row {
@@ -155,4 +149,43 @@ h2 {
 
 .catalogo-seccion {
   padding: 100px 0;
+}
+
+.espaciado-precio {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.highlight-container,
+.highlight {
+  position: relative;
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: ' ';
+  display: inline;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #ffd500;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+.content__item__producto {
+  counter-increment: itemcounter;
+  display: flex;
+  justify-content: flex;
+  position: relative;
 }

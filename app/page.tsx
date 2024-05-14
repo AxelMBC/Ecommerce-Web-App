@@ -148,13 +148,16 @@ const Home = () => {
         </div>
         <div className="container-diagonal">
           <div className="diagonal-box">
-            <div className="d-flex container mx-auto">
-              <div className="row justify-content-center">
-                <div className="col-4">
-                  <h3 className="z-1 position-relative mb-4 text-3xl font-bold">
+            <div className="container-fluid">
+              <div className="row justify-content-evenly align-items-center">
+                <div className="col-12 col-md-4">
+                  <h3 className="position-relative mb-4 text-3xl font-bold ">
                     Sobre InnovaSphere
                   </h3>
-                  <p className="z-1 position-relative">
+                  <p
+                    className="position-relative"
+                    style={{ fontSize: '18px', paddingBottom: '25px' }}
+                  >
                     En InnovaSphere, lideramos la innovación en el comercio
                     electrónico de productos tecnológicos. Nos dedicamos a
                     brindarte lo último en tecnología con un servicio al cliente
@@ -162,19 +165,19 @@ const Home = () => {
                     tecnología accesible para enriquecer la vida cotidiana de
                     nuestros clientes.
                   </p>
-                  <Link
-                    href="/"
-                    className="z-1 position-relative btn-about-us mt-6 inline-block"
-                  >
-                    Conoce Más
-                  </Link>
+                  <button type="button" className="btn-lead">
+                    <span className="btn-lead-text">Conoce Mas </span>
+                    <div className="fill-container"></div>
+                  </button>
                 </div>
-                <div className="z-1 col-8">
+                <div className="col-12 col-md-5 z-1">
                   <Image
                     src={InnovationImage}
                     alt="Sobre InnovaSphere"
-                    width={800}
-                    height={400}
+                    style={{
+                      width: '80%',
+                      height: 'auto',
+                    }}
                   />
                 </div>
               </div>

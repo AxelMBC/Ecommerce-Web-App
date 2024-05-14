@@ -35,12 +35,12 @@ const Header = () => {
             style={{ paddingRight: '80px' }}
           >
             <li className="content__item col-auto">
-              <Link className="link link--ersa" href="/catalogo">
+              <Link className="link link--ersa fc-white" href="/catalogo">
                 Catalogo
               </Link>
             </li>
             <li className="content__item col-auto ">
-              <Link className="link link--ersa" href="/nosotros">
+              <Link className="link link--ersa fc-white" href="/nosotros">
                 Nosotros
               </Link>
             </li>

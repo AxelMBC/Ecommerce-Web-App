@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
 import { productosAudio } from './productosAudio';
-import chevronIcono from '/public/imagenes/iconos/chevron.png';
+import chevronIcono from '../../../public/imagenes/iconos/chevron.png';
 import { convertirPrecio } from '@/app/utils/convertirPrecio';
 
 const CatalogoAudio = () => {
@@ -38,7 +38,7 @@ const CatalogoAudio = () => {
                     className="col-sm-12 col-md-6 col-xxl-4"
                     key={producto.id}
                     onClick={() =>
-                      router.push(`/catalogo/audio/${producto.slug}`)
+                      router.push(`/catalogo/Audio/${producto.slug}`)
                     }
                   >
                     <div

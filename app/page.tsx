@@ -15,25 +15,6 @@ import categoriaAudio from '../public/imagenes/categorias/categoria_audio.jpg';
 
 const Home = () => {
   const router = useRouter();
-  const [padding, setPadding] = useState('0px');
-
-  useEffect(() => {
-    const updatePadding = () => {
-      const angle = 11; // Skew angle in degrees
-      const radians = (angle * Math.PI) / 180; // Convert to radians
-      const containerWidth = window.innerWidth; // Get container width
-      const calculatedPadding = (Math.tan(radians) * containerWidth) / 2; // Calculate padding
-      document.documentElement.style.setProperty(
-        '--dynamic-padding',
-        `${calculatedPadding}px`,
-      ); // Update CSS variable
-    };
-
-    updatePadding(); // Initial calculation
-    window.addEventListener('resize', updatePadding); // Update on resize
-
-    return () => window.removeEventListener('resize', updatePadding); // Cleanup
-  }, []);
 
   return (
     <div className="flex min-h-screen flex-col p-6">
@@ -54,7 +35,7 @@ const Home = () => {
               />
             </div>
             <div className="content">
-              <h3>PCs</h3>
+              <h3 className="test">PCs</h3>
               <p>
                 Esta categoría incluye computadoras de escritorio, laptops, y
                 componentes esenciales como tarjetas gráficas, procesadores,

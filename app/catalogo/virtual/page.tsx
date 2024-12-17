@@ -6,7 +6,7 @@ import { convertirPrecio } from '@/app/utils/convertirPrecio';
 import Header from '../../header';
 import Footer from '../../footer';
 import { productosVirtual } from './productosVirtual';
-import chevronIcono from '/public/imagenes/iconos/chevron.png';
+import chevronIcono from '../../../public/imagenes/iconos/chevron.png';
 
 const CatalogoVirtual = () => {
   const router = useRouter();

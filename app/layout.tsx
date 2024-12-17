@@ -8,6 +8,7 @@ import './styles/botones.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Script from 'next/script';
+import "./styles/scss/all.scss"
 config.autoAddCss = false;
 
 export default function RootLayout({

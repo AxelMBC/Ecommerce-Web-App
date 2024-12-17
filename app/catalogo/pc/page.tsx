@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
 import { productosPc } from './productosPc';
-import chevronIcono from '/public/imagenes/iconos/chevron.png';
+import chevronIcono from '../../../public/imagenes/iconos/chevron.png';
 
 const CatalogoPc = () => {
   const router = useRouter();

@@ -1,9 +1,9 @@
-import pcGamer from '/public/imagenes/pc/pcGamer.png';
-import pcOficina from '/public/imagenes/pc/pcOficina.png';
-import pcTodo from '/public/imagenes/pc/pcTodo.png';
-import pcMini from '/public/imagenes/pc/pcMini.png';
-import pcVideo from '/public/imagenes/pc/pcVideo.png';
-import pcStreaming from '/public/imagenes/pc/pcStreaming.png';
+import pcGamer from '../../../public/imagenes/pc/pcGamer.png';
+import pcOficina from '../../../public/imagenes/pc/pcOficina.png';
+import pcTodo from '../../../public/imagenes/pc/pcTodo.png';
+import pcMini from '../../../public/imagenes/pc/pcMini.png';
+import pcVideo from '../../../public/imagenes/pc/pcVideo.png';
+import pcStreaming from '../../../public/imagenes/pc/pcStreaming.png';
 
 export const productosPc = [
   {

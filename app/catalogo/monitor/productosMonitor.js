@@ -1,21 +1,20 @@
-import monSamsung from '/public/imagenes/monitores/monitorSamsung.jpg';
-import monSamsungDos from '/public/imagenes/monitores/monitorSamsungDos.jpg';
-import monSamsungTres from '/public/imagenes/monitores/monitorSamsungTres.jpg';
-import Odyssey from '/public/imagenes/monitores/Odyssey.jpg';
-import OdysseyDos from '/public/imagenes/monitores/OdysseyDos.jpg';
-import OdysseyTres from '/public/imagenes/monitores/OdysseyTres.jpg';
-import AppleStudio from '/public/imagenes/monitores/AppleStudio.jpg';
-import AppleStudioDos from '/public/imagenes/monitores/AppleStudioDos.jpg';
-import AppleStudioTres from '/public/imagenes/monitores/AppleStudioTres.jpg';
-import quianMonitor from '/public/imagenes/monitores/QuianMonitor.jpg';
-import quianMonitorDos from '/public/imagenes/monitores/QuianMonitorDos.jpg';
-import quianMonitorTres from '/public/imagenes/monitores/quianMonitorTres.jpg';
-import Acteck from '/public/imagenes/monitores/Acteck.jpg';
-import ActeckDos from '/public/imagenes/monitores/ActeckDos.jpg';
-import ActeckTres from '/public/imagenes/monitores/ActeckTres.jpg';
-import LgMonitor from '/public/imagenes/monitores/LgMonitor.jpg';
-import LgMonitorDos from '/public/imagenes/monitores/LgMonitorDos.jpg';
-import LgMonitorTres from '/public/imagenes/monitores/LgMonitorTres.jpg';
+import monSamsung from '../../../public/imagenes/monitores/monitorSamsung.jpg';
+import monSamsungDos from '../../../public/imagenes/monitores/monitorSamsungDos.jpg';
+import monSamsungTres from '../../../public/imagenes/monitores/monitorSamsungTres.jpg';
+import Odyssey from '../../../public/imagenes/monitores/Odyssey.jpg';
+import OdysseyDos from '../../../public/imagenes/monitores/OdysseyDos.jpg';
+import OdysseyTres from '../../../public/imagenes/monitores/OdysseyTres.jpg';
+import AppleStudio from '../../../public/imagenes/monitores/AppleStudio.jpg';
+import AppleStudioDos from '../../../public/imagenes/monitores/AppleStudioDos.jpg';
+import AppleStudioTres from '../../../public/imagenes/monitores/AppleStudioTres.jpg';
+import quianMonitor from '../../../public/imagenes/monitores/QuianMonitor.jpg';
+import quianMonitorDos from '../../../public/imagenes/monitores/QuianMonitorDos.jpg';
+import Acteck from '../../../public/imagenes/monitores/Acteck.jpg';
+import ActeckDos from '../../../public/imagenes/monitores/ActeckDos.jpg';
+import ActeckTres from '../../../public/imagenes/monitores/ActeckTres.jpg';
+import LgMonitor from '../../../public/imagenes/monitores/LgMonitor.jpg';
+import LgMonitorDos from '../../../public/imagenes/monitores/LgMonitorDos.jpg';
+import LgMonitorTres from '../../../public/imagenes/monitores/LgMonitorTres.jpg';
 
 export const productosMonitor = [
   {
@@ -77,7 +76,7 @@ export const productosMonitor = [
     precio: 1346,
     imagen1: quianMonitor,
     imagen2: quianMonitorDos,
-    imagen3: quianMonitorTres,
+    imagen3: quianMonitorDos,
   },
   {
     id: 5,

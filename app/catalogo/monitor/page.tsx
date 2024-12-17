@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Header from '../../header';
 import Footer from '../../footer';
 import { productosMonitor } from './productosMonitor';
-import chevronIcono from '/public/imagenes/iconos/chevron.png';
+import chevronIcono from '../../../public/imagenes/iconos/chevron.png';
 import { convertirPrecio } from '@/app/utils/convertirPrecio';
 
 const CatalogoMon = () => {

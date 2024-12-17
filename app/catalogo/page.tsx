@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../header';
 import Footer from '../footer';
-import categoriaPcImg from '/public/imagenes/categorias/categoria_pc.jpg';
-import chevronIcono from '/public/imagenes/iconos/chevron.png';
-import chevronIconoBlanco from '/public/imagenes/iconos/chevron-blanco.png';
-import categoriaMonitorImagen from '/public/imagenes/categorias/categoria_monitor.jpg';
-import categoriaRealidadVirtual from '/public/imagenes/categorias/categoria_vr.jpg';
-import categoriaAudioImagen from '/public/imagenes/categorias/categoria_audio.jpg';
+import categoriaPcImg from '../../public/imagenes/categorias/categoria_pc.jpg';
+import chevronIcono from '../../public/imagenes/iconos/chevron.png';
+import chevronIconoBlanco from '../../public/imagenes/iconos/chevron-blanco.png';
+import categoriaMonitorImagen from '../../public/imagenes/categorias/categoria_monitor.jpg';
+import categoriaRealidadVirtual from '../../public/imagenes/categorias/categoria_vr.jpg';
+import categoriaAudioImagen from '../../public/imagenes/categorias/categoria_audio.jpg';
 import { sign } from 'crypto';
 
 const Catalogo = () => {
@@ -177,7 +177,7 @@ const Catalogo = () => {
             <div className="col">
               <div className="row justify-content-evenly">
                 <div className="col-auto" style={{ paddingRight: '40px' }}>
-                  <Link href="/catalogo/monitor" className="">
+                  <Link href="/catalogo/Audio" className="">
                     <i className="chevron-icono-claro fa-solid fa-chevron-right"></i>
                   </Link>
                 </div>

@@ -8,10 +8,10 @@ import Banner from './components/banner';
 import Footer from './footer';
 import Image from 'next/image';
 import InnovationImage from '../public/imagenes/innovation.jpg';
-import categoriaPcImg from '/public/imagenes/categorias/categoria_pc.jpg';
-import categoriaMonitor from '/public/imagenes/categorias/categoria_monitor.jpg';
-import categoriaRealidadVirtual from '/public/imagenes/categorias/categoria_vr.jpg';
-import categoriaAudio from '/public/imagenes/categorias/categoria_audio.jpg';
+import categoriaPcImg from '../public/imagenes/categorias/categoria_pc.jpg';
+import categoriaMonitor from '../public/imagenes/categorias/categoria_monitor.jpg';
+import categoriaRealidadVirtual from '../public/imagenes/categorias/categoria_vr.jpg';
+import categoriaAudio from '../public/imagenes/categorias/categoria_audio.jpg';
 
 const Home = () => {
   const router = useRouter();

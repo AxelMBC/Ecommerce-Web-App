@@ -37,7 +37,7 @@ const CategoriaDestacada: React.FC = ({}) => {
         className="pb-2 text-center"
         style={{ color: 'white', fontSize: '3rem' }}
       >
-        <span className="fancy">Productos</span> Destacados
+        Productos Destacados
       </h3>
       <div className="d-flex justify-content-center">
         {' '}

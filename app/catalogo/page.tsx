@@ -20,9 +20,7 @@ const Catalogo = () => {
       <div className="container-fluid">
         <div className="row justify-content-center titulo-principal my-4">
           <div className="col-10">
-            <h2 style={{ color: 'white' }}>
-              <span className="fancy">Categorias</span> de Productos
-            </h2>
+            <h2 style={{ color: 'white' }}>Categorias de Productos</h2>
           </div>
         </div>
         <div style={{ backgroundColor: '#FFF5EA' }}>

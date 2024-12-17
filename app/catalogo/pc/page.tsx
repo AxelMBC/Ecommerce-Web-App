@@ -21,9 +21,7 @@ const CatalogoPc = () => {
           style={{ paddingTop: '50px', paddingBottom: '20px' }}
         >
           <div className="col-10">
-            <h2 style={{ color: 'white' }}>
-              Explora <span className="fancy">PCs</span> de primera categoría
-            </h2>
+            <h2 style={{ color: 'white' }}>Explora PCs de primera categoría</h2>
           </div>
         </div>
 

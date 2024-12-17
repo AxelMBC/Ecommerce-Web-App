@@ -19,9 +19,7 @@ const CatalogoMon = () => {
           style={{ paddingTop: '50px', paddingBottom: '20px' }}
         >
           <div className="col-10">
-            <h2 style={{ color: 'white' }}>
-              Navega entre <span className="fancy">Monitores</span> Elite
-            </h2>
+            <h2 style={{ color: 'white' }}>Navega entre Monitores Elite</h2>
           </div>
         </div>
 

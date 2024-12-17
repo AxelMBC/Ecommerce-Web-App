@@ -20,9 +20,7 @@ const CatalogoAudio = () => {
           style={{ paddingTop: '50px', paddingBottom: '20px' }}
         >
           <div className="col-10">
-            <h2 style={{ color: 'white' }}>
-              Experimenta <span className="fancy">Audio</span> Superior
-            </h2>
+            <h2 style={{ color: 'white' }}>Experimenta Audio Superior</h2>
           </div>
         </div>
 

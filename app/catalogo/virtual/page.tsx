@@ -21,8 +21,7 @@ const CatalogoVirtual = () => {
         >
           <div className="col-10">
             <h2 style={{ color: 'white' }}>
-              Descubre el mundo de la{' '}
-              <span className="fancy">Relidad Virtual</span>
+              Descubre el mundo de la Relidad Virtual
             </h2>
           </div>
         </div>
